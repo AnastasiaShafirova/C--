@@ -14,7 +14,7 @@ void PrintConsonants(string txt, int index = 0)
         return;
     }
     string vowels = "aeiouy";
-    if (!vowels.Contains(txt[index]))
+    if (char.IsAsciiLetter(txt[index]) && !vowels.Contains(txt[index]))
             {
                 Console.Write($"{txt[index]}");
             }
